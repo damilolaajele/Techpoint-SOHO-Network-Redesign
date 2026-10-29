@@ -56,13 +56,12 @@ One ISP connection goes to the ISP-provided router, which connects to both edge 
 - **Static IPs:** gateways, NAS, printers, access points, WLC and switches.
 - **DHCP reservations:** cameras, so the NAS can identify each camera.
 - **Normal DHCP:** PCs and laptops.
-- Other /30 networks listed in the design (purpose not specified): `203.0.113.0/30`, `203.0.113.4/30` (ISP connection) and `192.168.1.0/30`, `192.168.1.4/30` (edge routers).
+- Other /30 networks listed in the design: `203.0.113.0/30`, `203.0.113.4/30` (ISP connection) and `192.168.1.0/30`, `192.168.1.4/30` (edge routers).
 
 ## Services and Security
 
 - **Inter-VLAN routing:** SVIs on both active multilayer switches.
 - **DHCP:** Switch 2 only, for all VLANs.
-- **DNS:** listed as "Edge Router/ISP DNS" for every VLAN.
 - **NAT/PAT:** on both edge routers.
 - **Routing:** edge routers advertise routes using OSPF. The ISP-provided router holds the default route.
 - **Firewall function:** ACLs on the switches and routers. No separate firewall.
