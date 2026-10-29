@@ -28,7 +28,7 @@ All devices are simulated in Packet Tracer. Device models are not specified. The
 
 | Device | Qty | Role |
 |--------|-----|------|
-| ISP-provided router | 1 | Connects to the ISP and holds the default route |
+| ISP-provided router | 2 | Connects to the ISP and holds the default route |
 | Edge routers | 2 | Route to the ISP-provided router. Both are active and both perform PAT |
 | Multilayer switches (Switch 1, Switch 2) | 2 | VLANs, default gateways (SVIs), inter-VLAN routing, ACLs. Switch 2 also runs DHCP |
 | Wireless LAN controller | 1 | Manages the access points and maps SSIDs to VLANs |
